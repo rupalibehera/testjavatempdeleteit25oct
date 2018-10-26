@@ -82,7 +82,7 @@ objects:
     output:
       to:
         kind: ImageStreamTag
-        name: 'spring-boot-health-check:${SUFFIX_NAME}:${RELEASE_VERSION}'
+        name: 'spring-boot-health-check${SUFFIX_NAME}:${RELEASE_VERSION}'
     postCommit: {}
     resources: {}
     source:

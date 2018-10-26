@@ -120,11 +120,11 @@ objects:
   metadata:
     labels:
       expose: "true"
-      app: "spring-boot-health-check"
-      provider: "snowdrop"
-      version: "${RELEASE_VERSION}"
-      group: "io.openshift.booster"
-    name: "spring-boot-health-check${SUFFIX_NAME}"
+      app: spring-boot-health-check
+      provider: snowdrop
+      version: ${RELEASE_VERSION}
+      group: io.openshift.booster
+    name: spring-boot-health-check${SUFFIX_NAME}
   spec:
     ports:
     - name: http

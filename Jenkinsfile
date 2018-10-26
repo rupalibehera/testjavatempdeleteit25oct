@@ -5,7 +5,7 @@ osio {
   config runtime: 'java'
 
   ci {
-    
+
 
     def resources = processTemplate(params: [
           release_version: "1.0.${env.BUILD_NUMBER}"
@@ -24,7 +24,7 @@ osio {
 
     build resources: resources
     deploy resources: resources, env: 'stage'
-    
+    deploy resources: resources, env: 'run', approval: 'manual'
 
   }
 }

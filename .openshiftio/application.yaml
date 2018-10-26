@@ -127,14 +127,14 @@ objects:
     name: "spring-boot-health-check${SUFFIX_NAME}"
   spec:
     ports:
-    - name: "http"
-      port: "8080"
-      protocol: "TCP"
-      targetPort: "8080"
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
     selector:
-      app: "spring-boot-health-check"
-      provider: "snowdrop"
-      group: "io.openshift.booster"
+      app: spring-boot-health-check
+      provider: snowdrop
+      group: io.openshift.booster
 - apiVersion: v1
   kind: DeploymentConfig
   metadata:

@@ -2,7 +2,7 @@
 
 osio {
 
-  config runtime: 'java'
+  config runtime: 'java', version: 1.8.1
 
   ci {
 

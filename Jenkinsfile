@@ -23,7 +23,7 @@ osio {
     ])
 
     build resources: resources, commands: """
-    mvn clean install
+    mvn clean
     """
     deploy resources: resources, env: 'stage'
     deploy resources: resources, env: 'run', approval: 'manual'

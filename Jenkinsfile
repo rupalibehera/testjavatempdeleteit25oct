@@ -22,7 +22,9 @@ osio {
           release_version: "1.0.${env.BUILD_NUMBER}"
     ])
 
-    build resources: resources
+    build resources: resources, commands: """
+    mvn clean install
+    """
     deploy resources: resources, env: 'stage'
     deploy resources: resources, env: 'run', approval: 'manual'
 

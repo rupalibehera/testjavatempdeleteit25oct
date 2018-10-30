@@ -1,9 +1,9 @@
-@Library('github.com/rupalibehera/osio-pipeline@java_support') _
+@Library('github.com/rupalibehera/osio-pipeline@java_support_v1') _
 def utils = new io.openshift.Utils()
 
 osio {
 
-  config runtime: 'java', version: '1.8.1'
+  config runtime: 'java'
 
   ci {
          integrationTestCmd =

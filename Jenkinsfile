@@ -2,7 +2,7 @@
 
 osio {
 
-  config runtime: 'java', version: '1.8.1'
+  config runtime: 'java'
 
   ci {
 
@@ -23,7 +23,7 @@ osio {
     ])
 
     build resources: resources, commands: """
-    mvn clean
+    mvn clean install
     """
     deploy resources: resources, env: 'stage'
     deploy resources: resources, env: 'run', approval: 'manual'
